@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/ChampionOfGoats/suddenlygeese#readme",
   "dependencies": {
+    "debug": "^3.1.0",
+    "dotenv": "^6.0.0",
+    "sentiment": "^5.0.1",
     "snoostorm": "0.0.5"
   }
 }
