@@ -22,6 +22,8 @@ const gooseRegex = /\b(?!\S*["-])(gooses?|geese|goslings?)\b/gmi;
 const goodBotRegex = /(good bot)/gmi;
 const badBotRegex = /(bad bot)/gmi;
 
+const iAmABot = `\n*****\nI am a bot, and this drive-by honking was automatic.`;
+
 /**
  * The supported honks
  */
@@ -75,7 +77,7 @@ const comments = client.CommentStream(streamOpts);
 const doHonk = (comment, theHonk) =>
 {
     info(`Honking '${theHonk}' at u/${comment.author.name}.\nComment was: ${comment.body}`);
-    comment.reply(theHonk);
+    comment.reply(`${theHonk}${iAmABot}`);
 }
 
 /**
