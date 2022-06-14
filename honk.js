@@ -175,3 +175,8 @@ comments.on('comment', comment =>
         checkAndDoNeutralHonk(comment);
     }
 });
+
+/**
+ * And we're off!
+ */
+info("And then suddenly, Geese!");
